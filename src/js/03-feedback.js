@@ -6,7 +6,7 @@ let localKey = 'feedback-form-state';
 
 addLocalData();
 
-const formValues = {
+let formValues = {
   email: form.email.value,
   message: form.message.value,
 };
@@ -32,9 +32,7 @@ function onFormSubmit(event) {
     return;
   }
 
-  console.log(submittedData);
-
-  localStorage.removeItem(LOCAL_KEY);
+  localStorage.removeItem(localKey);
   form.reset();
 }
 
