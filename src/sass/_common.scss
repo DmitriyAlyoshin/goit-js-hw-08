@@ -1,1 +1,11 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+.body__list {
+  list-style: none;
+
+  text-transform: uppercase;
+}
+
+.body__list--item {
+  margin-bottom: 20px;
+}
