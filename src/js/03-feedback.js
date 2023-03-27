@@ -22,7 +22,7 @@ function onFormInput({ target: { name, value } }) {
 function onFormSubmit(event) {
   event.preventDefault();
 
-  const submittedData = {
+  let submittedData = {
     email: event.currentTarget.email.value,
     message: event.currentTarget.message.value,
   };
@@ -37,7 +37,7 @@ function onFormSubmit(event) {
 }
 
 function addLocalData() {
-  const localData = JSON.parse(localStorage.getItem(LOCAL_KEY));
+  let localData = JSON.parse(localStorage.getItem(localKey));
 
   if (!localData) return;
 
